@@ -36,28 +36,28 @@
         Try
             Select Case teisenduseTyyp
                 Case 0
-                    Dim teisendaja As PrjTeisendajad.IDistantsiTeisendaja
-                    teisendaja = New PrjTeisendajad.CDistantsiTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.IDistantsiTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CDistantsiTeisendaja
                     vastus = Math.Round(teisendaja.KilometersToMiles(sisend), 2)
                 Case 1
-                    Dim teisendaja As PrjTeisendajad.IDistantsiTeisendaja
-                    teisendaja = New PrjTeisendajad.CDistantsiTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.IDistantsiTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CDistantsiTeisendaja
                     vastus = Math.Round(teisendaja.MilesToKilometers(sisend), 2)
                 Case 2
-                    Dim teisendaja As PrjTeisendajad.ITemperatuuriTeisendaja
-                    teisendaja = New PrjTeisendajad.CTemperatuuriTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.ITemperatuuriTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CTemperatuuriTeisendaja
                     vastus = Math.Round(teisendaja.CelciusToFahrenheit(sisend), 2)
                 Case 3
-                    Dim teisendaja As PrjTeisendajad.ITemperatuuriTeisendaja
-                    teisendaja = New PrjTeisendajad.CTemperatuuriTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.ITemperatuuriTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CTemperatuuriTeisendaja
                     vastus = Math.Round(teisendaja.FahrenheitToCelsius(sisend), 2)
                 Case 4
-                    Dim teisendaja As PrjTeisendajad.IKiiruseTeisendaja
-                    teisendaja = New PrjTeisendajad.CKiiruseTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.IKiiruseTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CKiiruseTeisendaja
                     vastus = Math.Round(teisendaja.KmhToMs(sisend), 2)
                 Case 5
-                    Dim teisendaja As PrjTeisendajad.IKiiruseTeisendaja
-                    teisendaja = New PrjTeisendajad.CKiiruseTeisendaja
+                    Dim teisendaja As PrjMeeskonnatooDemo1.IKiiruseTeisendaja
+                    teisendaja = New PrjMeeskonnatooDemo1.CKiiruseTeisendaja
                     vastus = Math.Round(teisendaja.MsToKmh(sisend), 2)
                 Case Else
                     vastus = "Tundmatu teisendus!"
