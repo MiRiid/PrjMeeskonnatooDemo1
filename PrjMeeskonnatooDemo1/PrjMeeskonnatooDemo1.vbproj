@@ -73,6 +73,9 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CDistantsiTeisendaja.vb" />
+    <Compile Include="CKiiruseTeisendaja.vb" />
+    <Compile Include="CTemperatuuriTeisendaja.vb" />
     <Compile Include="TeisendajaAken.vb">
       <SubType>Form</SubType>
     </Compile>
