@@ -1,12 +1,4 @@
-﻿Public Class ITemperatuuriTeisendaja
-    Implements ITemperatuuriTeisendaja
-
-    Private Function ITemperatuuriTeisendaja_CelciusToFahrenheit(c As Double) As Double Implements ITemperatuuriTeisendaja.CelciusToFahrenheit
-        Return (c * 9 / 5) + 32
-    End Function
-
-    Private Function ITemperatuuriTeisendaja_FahrenheitToCelsius(f As Double) As Double Implements ITemperatuuriTeisendaja.FahrenheitToCelsius
-        Return (f - 32) * 5 / 9
-    End Function
-
-End Class
+﻿Public Interface ITemperatuuriTeisendaja
+    Function CelciusToFahrenheit(ByVal c As Double) As Double
+    Function FahrenheitToCelsius(ByVal f As Double) As Double
+End Interface
